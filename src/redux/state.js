@@ -6,9 +6,9 @@ let store = {
 
         profilePage: {
             posts: [
-                { id: 1, message: 'hi', likesCount: 12 },
-                { id: 2, message: 'hello', likesCount: 10 },
-                { id: 3, message: 'zing', likesCount: 100 }
+                {id: 1, message: 'hi', likesCount: 12},
+                {id: 2, message: 'hello', likesCount: 10},
+                {id: 3, message: 'zing', likesCount: 100}
             ],
             newPostText: 'lolnewposttext'
         },
@@ -16,19 +16,19 @@ let store = {
 
         messagesPages: {
             dialogs: [
-                { id: 1, name: 'Lol' },
-                { id: 2, name: 'Lel' },
-                { id: 3, name: 'Lal' },
-                { id: 4, name: 'Lyl' },
-                { id: 5, name: 'Lql' },
-                { id: 6, name: 'Lil' }
+                {id: 1, name: 'Lol'},
+                {id: 2, name: 'Lel'},
+                {id: 3, name: 'Lal'},
+                {id: 4, name: 'Lyl'},
+                {id: 5, name: 'Lql'},
+                {id: 6, name: 'Lil'}
             ],
             messages: [
-                { id: 1, message: 'Hi' },
-                { id: 2, message: 'Hi hi' },
-                { id: 3, message: 'EY' },
-                { id: 4, message: 'YE' },
-                { id: 5, message: 'YEY' }
+                {id: 1, message: 'Hi'},
+                {id: 2, message: 'Hi hi'},
+                {id: 3, message: 'EY'},
+                {id: 4, message: 'YE'},
+                {id: 5, message: 'YEY'}
             ]
         }
     },
@@ -67,18 +67,17 @@ let store = {
 
 }
 
-export function addPostActionCreator () {
+export function addPostActionCreator() {
     return {
         type: ADD_POST
     }
 };
 
-export function updateNewPostTextActionCreator (text) {
+export function updateNewPostTextActionCreator(text) {
     return {
-        type: UPDATE_NEW_POST_TEXT, newText: text 
+        type: UPDATE_NEW_POST_TEXT, newText: text
     }
 }
-
 
 
 export default store;
