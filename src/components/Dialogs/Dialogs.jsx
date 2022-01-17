@@ -3,14 +3,13 @@ import Message from './Message/Message';
 import DialogItem from './DialogItem/DialogItem';
 
 
-
 export default function Dialogs(props) {
 
-    
-    let dialogsElements = props.state.dialogs.map(d=> <DialogItem name={d.name} id={d.id} /> )
 
-    
-    let messagesElements = props.state.messages.map( m => <Message message={m.message} /> )
+    let dialogsElements = props.state.dialogs.map(d => <DialogItem name={d.name} id={d.id}/>)
+
+
+    let messagesElements = props.state.messages.map(m => <Message message={m.message}/>)
 
 
     return (
